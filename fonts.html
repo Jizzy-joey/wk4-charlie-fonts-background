@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Nosifer&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-weight: normal;
+            font-size: 1.2rem;
+        }
+        body{
+            width: calc(80% + 25px);
+            margin-inline: auto;
+        }
+        h2 {
+            /* letter-spacing: 15px; */
+            font-family: "Nosifer", sans-serif;
+            font-stretch: expanded;
+        }
+        p{
+            text-align: justify;
+            hyphens: auto;
+            word-spacing: 10px;
+            font-variant: small-caps;
+            background-color: aqua;
+            margin-block: 1rem;
+            font-family: "Syne Mono", monospace;
+            line-height: 4;
+            text-transform: capitalize;
+        }
+        strong{
+            font-weight: 700;
+            /* text-decoration: double overline red 4px; */
+            /* text-decoration-thickness: 2px; */
+            text-decoration-line: line-through;
+            border-block: 4px solid red;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h2>Sans-Serif</h2>
+        <p>Sans-serif fonts are clean and modern, often used for digital content due to their readability on screens.</p>
+        <p>Examples of sans-serif fonts include Arial, Helvetica, and Verdana.</p>
+        <p>They lack the small decorative strokes (serifs) at the ends of letters.</p>
+        <p>Sans-serif fonts are commonly used in minimalist and contemporary designs.</p>
+    </section>
+    <section>
+        <h2>Serif</h2>
+        <p>Serif fonts have small decorative strokes or lines at the ends of their characters.</p>
+        <p>They are <strong>often associated with tradition, formality, and readability in print.</strong></p>
+        <p>Examples of serif fonts include Times New Roman, Georgia, and Garamond.</p>
+        <p>Serif fonts are commonly used in books, newspapers, and formal documents.</p>
+    </section>
+    <section>
+        <h2>Cursive</h2>
+        <p>Cursive fonts mimic the style of handwritten script with flowing, connected letters.</p>
+        <p>They are often used for decorative purposes or to convey elegance and creativity.</p>
+        <p>Examples of cursive fonts include Brush Script, Pacifico, and Lobster.</p>
+        <p>Cursive fonts are less commonly used for body text due to their reduced readability.</p>
+    </section>
+    <section>
+        <h2>Monospace</h2>
+        <p>Monospace <strong>fonts have characters that occupy the same amount of horizontal space.</strong></p>
+        <p>They are often used in coding, technical documents, and typewriters.</p>
+        <p>Examples of monospace fonts include Courier, Consolas, and Monaco.</p>
+        <p>Monospace fonts are valued for their alignment and clarity in structured text.</p>
+    </section>
+</body>
+</html>

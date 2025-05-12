@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    margin-block: 40px;
+    margin-inline: auto;
+    width: 600px;
+    height: 400px;
+}
+
+section:first-of-type{
+    background-image: url(./media/soccer.jpg);
+    background-size: cover;
+}
+section:nth-of-type(2){
+    background-image: url(./media/soccer.jpg);
+    background-size: contain;
+}
+section:nth-of-type(3){
+    background-image: url(https://images.pexels.com/photos/918798/pexels-photo-918798.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: 100% 100%;
+}
+section:nth-of-type(4){
+    background-image: url(./media/jump.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+section:nth-of-type(5){
+    background-image: url(./media/jump.jpg);
+    background-size: cover;
+}
+
+section:nth-of-type(6){
+    border: 15px double orange;
+    background-image: url(./media/jump.jpg), url(./media/soccer.jpg), url(./media/kicking.jpg);
+    background-size: 50px, 100px;
+    background-repeat: repeat-x, no-repeat, no-repeat;
+    background-position: center, top right, bottom right;
+}
+section:nth-of-type(7){
+    border: 15px double lightblue;
+    background-image: url(./media/jump.jpg), url(./media/soccer.jpg), url(./media/kicking.jpg), 
+    url(./media/soccer.jpg) linear-gradient();
+    background-size: 50px, 50px, 50px, contain;
+    background-repeat: no-repeat;
+    background-position: 30px 60px, 100px 200px, 500px 15px, 0px 0px;   
+    
+}
+body{
+    background: url(./media/soccer.jpg);
+    background-color: blueviolet;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-backdrop-filter: blur(5px);
+    /* backdrop-filter: blur(5px);  */
+    background-blend-mode: exclusion;   
+}
