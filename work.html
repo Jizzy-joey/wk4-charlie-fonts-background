@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work</title>
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    div{
+        border: 2px solid rgb(13, 164, 156);
+        display: flex;
+        
+    }
+    main{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(6, 200px);
+        grid-template-areas: 
+        "a a a a"
+        "a a a a"
+        "a a a a"
+        "e e f b"
+        "g c c b"
+        "d d d d";
+        
+    }
+    /* main{
+        border: 5px solid rgb(13, 164, 156); */
+     
+    main > :nth-child(1){
+        grid-area: a;
+    }
+    main > :nth-child(5){
+        grid-area: e;
+    }
+    main > :nth-child(6){
+        grid-area: f;
+    }
+    main > :nth-child(2){
+        grid-area: b;
+    }
+    main > :nth-child(3){
+        grid-area: c;
+        align-self: baseline;
+    }
+    main > :nth-child(4){
+        grid-area: d;
+    }
+    main > :nth-child(7){
+        grid-area: g;
+    }
+    nav a{
+        text-decoration: none;
+        text-transform: capitalize;
+        color: inherit;
+    }
+    nav ul{
+        list-style-type: none;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 100px;
+        font-size: 2rem;
+        background-color: rgb(13, 164, 156);
+        color: thistle;
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">link 1</a></li>
+            <li><a href="#"></a>link 2</li>
+            <li><a href="#"></a>link 3</li>
+            <li><a href="#"></a>link 4</li>
+            <li><a href="#"></a>link 5</li>
+            <li><a href="#"></a>link 6</li>
+        </ul>
+    </nav>
+    <main>
+        <div>
+            <h2>heading-1</h2>
+        </div>
+        <div>
+            <h2>heading-2</h2>
+        </div>
+        <div>
+            <h2>heading-3</h2>
+        </div>
+        <div>
+            <h2>heading-4</h2>
+        </div>
+        <div>
+            <h2>heading-5</h2>
+        </div>
+        <div>
+            <h2>heading-6</h2>
+        </div>
+        <div>
+            <h2>heading-7</h2>
+        </div>
+    </main>
+</body>
+</html>
